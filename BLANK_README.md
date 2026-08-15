@@ -3,7 +3,7 @@
 *** Blank template. Run a search & replace for these tokens, then delete this block:
 ***   github_username, repo_name, project_title, project_description,
 ***   project_license, twitter_handle, linkedin_username, email_client,
-***   email, demo_url
+***   buymeacoffee_username, email, demo_url
 *** Reference-style links at the bottom stay as-is.
 -->
 
@@ -64,6 +64,7 @@
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#support">Support</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -172,6 +173,22 @@ inspire, and create. Any contributions you make are **greatly appreciated**.
 <a href="https://github.com/github_username/repo_name/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=github_username/repo_name" alt="contrib.rocks image" />
 </a>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- SUPPORT -->
+## Support
+
+Like this project? A coffee keeps it going — every cup funds issues, fixes, and
+new features.
+
+<div align="center">
+  <a href="https://www.buymeacoffee.com/buymeacoffee_username" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="217" height="60">
+  </a>
+</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

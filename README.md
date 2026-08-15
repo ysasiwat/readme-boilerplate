@@ -6,7 +6,7 @@
 *** and delete this comment block.
 ***   github_username, repo_name, project_title, project_description,
 ***   project_license, twitter_handle, linkedin_username, email_client,
-***   email, demo_url
+***   buymeacoffee_username, email, demo_url
 *** Leave the reference-style links at the bottom alone — they keep the
 *** top of the file clean and readable.
 -->
@@ -71,6 +71,7 @@
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#support">Support</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -214,6 +215,22 @@ Don't forget to give the project a star! Thanks again!
 <a href="https://github.com/ysasiwat/readme-boilerplate/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=ysasiwat/readme-boilerplate" alt="contrib.rocks image" />
 </a>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- SUPPORT -->
+## Support
+
+Like this project? A coffee keeps it going — every cup funds issues, fixes, and
+new features.
+
+<div align="center">
+  <a href="https://www.buymeacoffee.com/buymeacoffee_username" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="217" height="60">
+  </a>
+</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
