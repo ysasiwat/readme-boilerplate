@@ -19,14 +19,4 @@
     &middot;
     <a href="https://github.com/github_username/repo_name/issues/new?labels=enhancement&template=feature-request.md">Request Feature</a>
   </p>
-
-  <p align="center">
-    <strong>Author:</strong> y.sasiwat
-    &middot;
-    <a href="mailto:y.sasiwat@gmail.com">y.sasiwat@gmail.com</a>
-    <br />
-    <strong>Created:</strong> 2026-08-15
-    &middot;
-    <strong>Updated:</strong> 2026-08-15
-  </p>
 </div>
