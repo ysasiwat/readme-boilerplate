@@ -28,7 +28,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/ysasiwat/readme-boilerplate">
     <img src="images/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
@@ -37,14 +37,14 @@
   <p align="center">
     A polished, modular README template — every section you need, nothing you don't.
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/ysasiwat/readme-boilerplate"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/ysasiwat/readme-boilerplate">View Demo</a>
     &middot;
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=bug&template=bug-report.md">Report Bug</a>
+    <a href="https://github.com/ysasiwat/readme-boilerplate/issues/new?labels=bug&template=bug-report.md">Report Bug</a>
     &middot;
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=enhancement&template=feature-request.md">Request Feature</a>
+    <a href="https://github.com/ysasiwat/readme-boilerplate/issues/new?labels=enhancement&template=feature-request.md">Request Feature</a>
   </p>
 </div>
 
@@ -145,7 +145,7 @@ Nothing to install — the boilerplate is plain Markdown. You only need:
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/ysasiwat/readme-boilerplate.git
    ```
 2. Copy `README.md` to your own repository
 3. Search and replace the tokens: `github_username`, `repo_name`, `project_title`,
@@ -185,7 +185,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
     - [ ] ภาษาไทย
     - [ ] Español
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full
+See the [open issues](https://github.com/ysasiwat/readme-boilerplate/issues) for a full
 list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -211,8 +211,8 @@ Don't forget to give the project a star! Thanks again!
 
 ### Top contributors:
 
-<a href="https://github.com/github_username/repo_name/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=github_username/repo_name" alt="contrib.rocks image" />
+<a href="https://github.com/ysasiwat/readme-boilerplate/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=ysasiwat/readme-boilerplate" alt="contrib.rocks image" />
 </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -233,7 +233,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/ysasiwat/readme-boilerplate](https://github.com/ysasiwat/readme-boilerplate)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -256,16 +256,16 @@ Resources this template recommends.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/ysasiwat/readme-boilerplate.svg?style=for-the-badge
+[contributors-url]: https://github.com/ysasiwat/readme-boilerplate/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/ysasiwat/readme-boilerplate.svg?style=for-the-badge
+[forks-url]: https://github.com/ysasiwat/readme-boilerplate/network/members
+[stars-shield]: https://img.shields.io/github/stars/ysasiwat/readme-boilerplate.svg?style=for-the-badge
+[stars-url]: https://github.com/ysasiwat/readme-boilerplate/stargazers
+[issues-shield]: https://img.shields.io/github/issues/ysasiwat/readme-boilerplate.svg?style=for-the-badge
+[issues-url]: https://github.com/ysasiwat/readme-boilerplate/issues
+[license-shield]: https://img.shields.io/github/license/ysasiwat/readme-boilerplate.svg?style=for-the-badge
+[license-url]: https://github.com/ysasiwat/readme-boilerplate/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.svg
