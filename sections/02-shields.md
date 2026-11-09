@@ -20,3 +20,17 @@
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 -->
+
+<!-- Alternative set — badges that tell users something (build, release, license)
+*** instead of popularity counts, which read 0 on a new repo. Swap `ci.yml` for your
+*** workflow file name. Keep 4 to 7 badges in total.
+[![CI][ci-shield]][ci-url]
+[![Release][release-shield]][release-url]
+[![License][license-shield]][license-url]
+
+[ci-shield]: https://img.shields.io/github/actions/workflow/status/github_username/repo_name/ci.yml?style=for-the-badge
+[ci-url]: https://github.com/github_username/repo_name/actions
+[release-shield]: https://img.shields.io/github/v/release/github_username/repo_name?style=for-the-badge
+[release-url]: https://github.com/github_username/repo_name/releases
+-->
+

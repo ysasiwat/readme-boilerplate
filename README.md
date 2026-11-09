@@ -2,11 +2,8 @@
 
 <!--
 *** readme-boilerplate — a polished, modular README template kit.
-*** To use: copy README.md, run a search & replace for the tokens below,
-*** and delete this comment block.
-***   github_username, repo_name, project_title, project_description,
-***   project_license, twitter_handle, linkedin_username, email_client,
-***   buymeacoffee_username, email, demo_url
+*** To use: copy BLANK_README.md, run a search & replace for the tokens listed
+*** in the Configuration section, and delete this comment block.
 *** Leave the reference-style links at the bottom alone — they keep the
 *** top of the file clean and readable.
 -->
@@ -21,7 +18,6 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -37,10 +33,10 @@
   <p align="center">
     A polished, modular README template — every section you need, nothing you don't.
     <br />
-    <a href="https://github.com/ysasiwat/readme-boilerplate"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/ysasiwat/readme-boilerplate/tree/master/sections"><strong>Explore the sections »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ysasiwat/readme-boilerplate">View Demo</a>
+    <a href="https://github.com/ysasiwat/readme-boilerplate/blob/master/BLANK_README.md">View Blank Template</a>
     &middot;
     <a href="https://github.com/ysasiwat/readme-boilerplate/issues/new?labels=bug&template=bug-report.md">Report Bug</a>
     &middot;
@@ -61,6 +57,7 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
+    <li><a href="#quick-start">Quick Start</a></li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
@@ -69,6 +66,8 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#configuration">Configuration</a></li>
+    <li><a href="#troubleshooting">Troubleshooting</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#support">Support</a></li>
@@ -83,7 +82,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](BLANK_README.md)
 
 `readme-boilerplate` is a single-file README kit that combines the two things every
 good repo README needs: **structure** and **polish**. Most templates give you one or
@@ -113,6 +112,8 @@ folder.
 - **🧩 Modular sections** — copy only the parts you need from `sections/`
 - **📄 Blank template** — `BLANK_README.md` with search-and-replace tokens
 - **🐞 Issue templates** — bug report and feature request, pre-wired
+- **🚀 Quick Start, Configuration, Troubleshooting** — optional sections that get readers
+  to a working result fast and answer the common questions
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,6 +126,20 @@ Frameworks and libraries that power the template. Swap for whatever your project
 * [![Markdown][Markdown-shield]][Markdown-url]
 * [![GitHub][GitHub-shield]][GitHub-url]
 * [![Shields.io][Shields-shield]][Shields-url]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- QUICK START -->
+## Quick Start
+
+```sh
+curl -fsSLo README.md https://raw.githubusercontent.com/ysasiwat/readme-boilerplate/master/BLANK_README.md
+sed -i 's/github_username/your-user/g; s/repo_name/your-repo/g' README.md
+```
+
+Then replace the remaining tokens from [Configuration](#configuration) and push.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,10 +163,8 @@ Nothing to install — the boilerplate is plain Markdown. You only need:
    ```sh
    git clone https://github.com/ysasiwat/readme-boilerplate.git
    ```
-2. Copy `README.md` to your own repository
-3. Search and replace the tokens: `github_username`, `repo_name`, `project_title`,
-   `project_description`, `project_license`, `twitter_handle`, `linkedin_username`,
-   `email_client`, `email`, `demo_url`
+2. Copy `BLANK_README.md` to your own repository as `README.md`
+3. Search and replace every token in the [Configuration](#configuration) table
 4. Drop your `logo` and `screenshot` into `images/`
 5. Delete the comment blocks and push
 
@@ -168,7 +181,55 @@ Pick one of three ways to use the kit:
 - **Blank start** — copy `BLANK_README.md` when you want only the skeleton
 - **Piece by piece** — grab individual sections from `sections/` and paste in any order
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_Every section on its own: see the [`sections/`](sections/) folder._
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- CONFIGURATION -->
+## Configuration
+
+`BLANK_README.md` and the `sections/` files use these tokens. Replace each one
+everywhere it appears.
+
+| Token | Replace with | Example |
+|-------|--------------|---------|
+| `github_username` | Your GitHub user or org | `ysasiwat` |
+| `repo_name` | Repository name | `readme-boilerplate` |
+| `project_title` | Display name in the header | `readme-boilerplate` |
+| `project_description` | One-line tagline, 10 words or fewer | `A modular README template` |
+| `project_license` | License name | `MIT` |
+| `demo_url` | Live demo or screenshot target | `https://example.com` |
+| `your_name` | Your name in Contact | `Jane Doe` |
+| `twitter_handle` | X / Twitter handle, no `@` | `janedoe` |
+| `linkedin_username` | LinkedIn profile slug | `janedoe` |
+| `email_client` | Email domain (replace before `email`) | `gmail` |
+| `email` | Email local part | `jane` |
+| `buymeacoffee_username` | Buy Me a Coffee page name | `janedoe` |
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- TROUBLESHOOTING -->
+## Troubleshooting
+
+**The logo doesn't show.** The path is relative to the file. In a root README use
+`images/logo.svg`; the copy in `sections/01-header.md` uses `../images/logo.svg`.
+
+**Shields say "repo not found".** A token is still unreplaced, or the repo is private.
+shields.io can only read public repos.
+
+**A Table of Contents link doesn't jump.** The anchor must match the heading in lower
+case with spaces as hyphens: `## Quick Start` → `#quick-start`.
+
+**`email` replaced part of `email_client`.** Replace `email_client` first, then `email`.
+
+**`sed: 1: "README.md": invalid command` on macOS.** BSD sed needs an empty suffix:
+`sed -i '' 's/.../.../g' README.md`.
+
+**Still stuck?** [Open an issue](https://github.com/ysasiwat/readme-boilerplate/issues/new?labels=bug&template=bug-report.md).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -199,16 +260,10 @@ list of proposed features (and known issues).
 Contributions are what make the open source community an amazing place to learn,
 inspire, and create. Any contributions you make are **greatly appreciated**.
 
-If you have a suggestion that would make this better, please fork the repo and create a
-pull request. You can also simply open an issue with the tag "enhancement".
+If you have a suggestion that would make this better, read [CONTRIBUTING.md](CONTRIBUTING.md)
+and open a pull request. You can also simply open an issue with the tag "enhancement".
 
 Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ### Top contributors:
 
@@ -248,7 +303,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+ysasiwat - [@ysasiwat](https://github.com/ysasiwat)
 
 Project Link: [https://github.com/ysasiwat/readme-boilerplate](https://github.com/ysasiwat/readme-boilerplate)
 
@@ -283,8 +338,6 @@ Resources this template recommends.
 [issues-url]: https://github.com/ysasiwat/readme-boilerplate/issues
 [license-shield]: https://img.shields.io/github/license/ysasiwat/readme-boilerplate.svg?style=for-the-badge
 [license-url]: https://github.com/ysasiwat/readme-boilerplate/blob/master/LICENSE
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.svg
 [Markdown-shield]: https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white
 [Markdown-url]: https://www.markdownguide.org/

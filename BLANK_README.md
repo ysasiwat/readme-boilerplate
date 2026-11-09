@@ -2,9 +2,10 @@
 <!--
 *** Blank template. Run a search & replace for these tokens, then delete this block:
 ***   github_username, repo_name, project_title, project_description,
-***   project_license, twitter_handle, linkedin_username, email_client,
-***   buymeacoffee_username, email, demo_url
-*** Reference-style links at the bottom stay as-is.
+***   project_license, demo_url, your_name, twitter_handle, linkedin_username,
+***   email_client, email, buymeacoffee_username
+*** Replace email_client before email. Delete any section you don't need, and its
+*** line in the Table of Contents. Reference-style links at the bottom stay as-is.
 -->
 
 
@@ -34,7 +35,7 @@
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="demo_url">View Demo</a>
     &middot;
     <a href="https://github.com/github_username/repo_name/issues/new?labels=bug&template=bug-report.md">Report Bug</a>
     &middot;
@@ -51,9 +52,11 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
+        <li><a href="#features">Features</a></li>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
+    <li><a href="#quick-start">Quick Start</a></li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
@@ -62,6 +65,8 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#configuration">Configuration</a></li>
+    <li><a href="#troubleshooting">Troubleshooting</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#support">Support</a></li>
@@ -76,7 +81,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](demo_url)
 
 What problem does this project solve? One or two sentences.
 
@@ -90,10 +95,36 @@ Here's why:
 
 
 
+### Features
+
+- **🌍 Feature one:** What it does in one clear line
+- **🔧 Feature two:** What it does in one clear line
+- **📱 Feature three:** What it does in one clear line
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
 ### Built With
 
 * [![Tech][Tech-shield]][Tech-url]
 * [![Tech2][Tech2-shield]][Tech2-url]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- QUICK START — five commands or fewer from zero to a working result -->
+## Quick Start
+
+```sh
+git clone https://github.com/github_username/repo_name.git
+cd repo_name
+npm install
+npm start
+```
+
+That's it. Open http://localhost:3000 and you should see the app running.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -133,10 +164,73 @@ Instructions for getting a local copy up and running.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Show examples of how the project can be used. Screenshots, code snippets, and demos
-all work well here.
+Show a basic example first, then an advanced one. Include the output so readers
+know what success looks like.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+### Basic Example
+
+```js
+import { createApp } from 'repo_name';
+
+createApp({ port: 3000 }).start();
+// Server running at http://localhost:3000
+```
+
+### Advanced Example
+
+```js
+import { createApp, plugins } from 'repo_name';
+
+createApp({
+  port: process.env.APP_PORT || 3000,
+  plugins: [plugins.auth(), plugins.rateLimit({ max: 100 })],
+}).start();
+```
+
+_For more examples, please refer to the [Documentation](demo_url)_
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- CONFIGURATION — delete if there is nothing to configure -->
+## Configuration
+
+| Option | Type | Default | Description |
+|--------|------|---------|-------------|
+| `port` | number | `3000` | Port the server listens on |
+| `debug` | boolean | `false` | Print debug logs |
+| `timeout` | number | `30000` | Request timeout in milliseconds |
+
+### Environment Variables
+
+```sh
+APP_PORT=8080
+APP_DEBUG=true
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- TROUBLESHOOTING — the 3 to 5 errors users actually hit -->
+## Troubleshooting
+
+**Error: `Cannot find module`**
+
+Reinstall dependencies:
+
+```sh
+rm -rf node_modules package-lock.json
+npm install
+```
+
+**Error: `Port 3000 is already in use`**
+
+Start on another port: `APP_PORT=8080 npm start`
+
+**Still stuck?** Search the [open issues](https://github.com/github_username/repo_name/issues)
+or [open a new one](https://github.com/github_username/repo_name/issues/new?labels=bug&template=bug-report.md).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -206,7 +300,7 @@ Distributed under the project_license License. See `LICENSE` for more informatio
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+your_name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
 
 Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
 

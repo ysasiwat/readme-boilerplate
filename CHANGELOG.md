@@ -9,6 +9,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Buy Me a Coffee support section (`sections/11-support.md`)
+- Quick Start, Configuration and Troubleshooting sections (`sections/15-17`), also in
+  `README.md` and `BLANK_README.md`
+- Basic and advanced examples in Usage
+- Alternative badge set (CI, release, license) in `sections/02-shields.md`
+- Token reference table in `README.md`; new `your_name` token
+
+### Fixed
+- Table of Contents now matches across `README.md`, `BLANK_README.md` and
+  `sections/03-table-of-contents.md`; `BLANK_README.md` gains the Features section
+- `demo_url` token is now used by View Demo, the screenshot and the docs link
+- `README.md` no longer shows unreplaced LinkedIn and Contact placeholders or
+  `example.com` links
+- README Contributing points to `CONTRIBUTING.md` instead of repeating it
+- Changelog compare links point at this repo
 
 ## [1.0.0] - 2026-08-15
 
@@ -19,5 +33,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - GitHub issue templates (bug report, feature request) and pull request template
 - MIT license
 
-[Unreleased]: https://github.com/github_username/repo_name/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/github_username/repo_name/releases/tag/v1.0.0
+[Unreleased]: https://github.com/ysasiwat/readme-boilerplate/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/ysasiwat/readme-boilerplate/releases/tag/v1.0.0

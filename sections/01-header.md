@@ -1,4 +1,6 @@
-<!-- PROJECT HEADER — centered logo + title + tagline + action buttons -->
+<!-- PROJECT HEADER — centered logo + title + tagline + action buttons
+*** The logo path is relative to this folder so it renders here. In a README at
+*** the repo root, change `../images/logo.svg` to `images/logo.svg`. -->
 <br />
 <div align="center">
   <a href="https://github.com/github_username/repo_name">
@@ -13,7 +15,7 @@
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="demo_url">View Demo</a>
     &middot;
     <a href="https://github.com/github_username/repo_name/issues/new?labels=bug&template=bug-report.md">Report Bug</a>
     &middot;

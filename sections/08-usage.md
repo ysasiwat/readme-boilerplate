@@ -1,9 +1,29 @@
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Show examples of how the project can be used. Screenshots, code snippets, and demos
-all work well here.
+Show a basic example first, then an advanced one. Include the output so readers
+know what success looks like.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+### Basic Example
+
+```js
+import { createApp } from 'repo_name';
+
+createApp({ port: 3000 }).start();
+// Server running at http://localhost:3000
+```
+
+### Advanced Example
+
+```js
+import { createApp, plugins } from 'repo_name';
+
+createApp({
+  port: process.env.APP_PORT || 3000,
+  plugins: [plugins.auth(), plugins.rateLimit({ max: 100 })],
+}).start();
+```
+
+_For more examples, please refer to the [Documentation](demo_url)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
