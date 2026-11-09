@@ -9,6 +9,8 @@
 
   <h3 align="center">project_title</h3>
 
+<!-- Shields from 02-shields.md go here: blank line above and below, no indent. -->
+
   <p align="center">
     project_description
     <br />

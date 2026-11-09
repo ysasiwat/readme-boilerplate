@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Shields moved from above the header to under the title, so readers see the
+  project name first
+
 ### Added
 - Buy Me a Coffee support section (`sections/11-support.md`)
 - Quick Start, Configuration and Troubleshooting sections (`sections/15-17`), also in

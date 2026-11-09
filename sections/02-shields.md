@@ -1,4 +1,6 @@
-<!-- PROJECT SHIELDS — live badges via shields.io (reference-style links) -->
+<!-- PROJECT SHIELDS — live badges via shields.io (reference-style links).
+*** Paste inside the header div, right under the <h3> title, with a blank line
+*** above and below and no indent so GitHub renders them centered. -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]

@@ -10,17 +10,6 @@
 
 
 
-<!-- PROJECT SHIELDS -->
-<!-- Reference-style links keep this block tidy. Variables are declared at
-*** the bottom of the file. Swap in your own repo to make them live. -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -29,6 +18,15 @@
   </a>
 
   <h3 align="center">readme-boilerplate</h3>
+
+<!-- PROJECT SHIELDS — under the title so readers see the name first.
+*** Keep the blank lines around this block and no indent, or GitHub won't render
+*** the markdown inside the div. Variables are declared at the bottom of the file. -->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
 
   <p align="center">
     A polished, modular README template — every section you need, nothing you don't.
