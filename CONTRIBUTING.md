@@ -20,6 +20,19 @@ Thanks for helping improve `readme-boilerplate`. By taking part you agree to the
   `README.md`
 - One logical change per pull request
 
+## Releasing (maintainers)
+
+Write each change under `## [Unreleased]` in `CHANGELOG.md` as it lands. To release:
+
+```sh
+scripts/version.sh bump 2.1.0   # moves [Unreleased] under 2.1.0, sets VERSION and the compare links
+scripts/version.sh check        # the same check runs on every push and pull request
+git commit -am "chore(release): 2.1.0" && git tag -a v2.1.0 -m v2.1.0 && git push origin master v2.1.0
+```
+
+Pushing the tag runs the **Release** workflow, which makes the GitHub release from that
+`CHANGELOG.md` section.
+
 ## Reporting issues
 
 Use the bug report or feature request templates in

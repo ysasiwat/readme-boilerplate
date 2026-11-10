@@ -1,0 +1,13 @@
+name: Check version
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+  version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: bash scripts/version.sh check

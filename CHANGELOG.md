@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- `scripts/version.sh` to bump and check the version in `VERSION` and `CHANGELOG.md`,
+  a **Check version** workflow, and a **Release** workflow that makes the GitHub release
+  from the changelog when a `vX.Y.Z` tag is pushed
+
 ## [2.0.0] - 2026-11-10
 
 ### Changed
