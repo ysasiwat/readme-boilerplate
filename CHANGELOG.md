@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.0] - 2026-11-10
+
 ### Changed
 - **Breaking:** tokens are now written `{{token}}` (for example `{{repo_name}}`) in
   `BLANK_README.md` and `sections/`. One `grep -n '{{'` finds every leftover, and
@@ -15,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   project name first
 
 ### Added
+- `VERSION` file holding the current release number
 - `SECURITY.md` and `CODE_OF_CONDUCT.md` for this repo, and copyable versions in
   `templates/`
 - Buy Me a Coffee support section (`sections/11-support.md`)
@@ -42,5 +45,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - GitHub issue templates (bug report, feature request) and pull request template
 - MIT license
 
-[Unreleased]: https://github.com/ysasiwat/readme-boilerplate/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/ysasiwat/readme-boilerplate/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/ysasiwat/readme-boilerplate/compare/v1.0.0...v2.0.0
 [1.0.0]: https://github.com/ysasiwat/readme-boilerplate/releases/tag/v1.0.0
