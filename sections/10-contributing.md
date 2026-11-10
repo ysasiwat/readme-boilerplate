@@ -12,8 +12,8 @@ inspire, and create. Any contributions you make are **greatly appreciated**.
 
 ### Top contributors:
 
-<a href="https://github.com/github_username/repo_name/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=github_username/repo_name" alt="contrib.rocks image" />
+<a href="https://github.com/{{github_username}}/{{repo_name}}/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo={{github_username}}/{{repo_name}}" alt="contrib.rocks image" />
 </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

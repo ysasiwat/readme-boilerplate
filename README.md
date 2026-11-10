@@ -108,8 +108,9 @@ folder.
 - **🛡️ Live shields** — contributors, stars, forks, issues, license via shields.io
 - **⬆️ Back-to-top links** — one anchor, every section returns to it
 - **🧩 Modular sections** — copy only the parts you need from `sections/`
-- **📄 Blank template** — `BLANK_README.md` with search-and-replace tokens
+- **📄 Blank template** — `BLANK_README.md` with `{{token}}` placeholders that one grep can find
 - **🐞 Issue templates** — bug report and feature request, pre-wired
+- **🔒 Community files** — `SECURITY.md` and `CODE_OF_CONDUCT.md` templates in `templates/`
 - **🚀 Quick Start, Configuration, Troubleshooting** — optional sections that get readers
   to a working result fast and answer the common questions
 
@@ -134,10 +135,12 @@ Frameworks and libraries that power the template. Swap for whatever your project
 
 ```sh
 curl -fsSLo README.md https://raw.githubusercontent.com/ysasiwat/readme-boilerplate/master/BLANK_README.md
-sed -i 's/github_username/your-user/g; s/repo_name/your-repo/g' README.md
+sed -i 's/{{github_username}}/your-user/g; s/{{repo_name}}/your-repo/g' README.md
+grep -n '{{' README.md
 ```
 
-Then replace the remaining tokens from [Configuration](#configuration) and push.
+The last command lists the tokens still left. Replace them using the
+[Configuration](#configuration) table, then push.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -175,9 +178,12 @@ Nothing to install — the boilerplate is plain Markdown. You only need:
 
 Pick one of three ways to use the kit:
 
-- **Full template** — copy `README.md`, replace tokens, done
-- **Blank start** — copy `BLANK_README.md` when you want only the skeleton
+- **Blank start** — copy `BLANK_README.md`, replace the tokens, delete what you don't need
 - **Piece by piece** — grab individual sections from `sections/` and paste in any order
+- **Community files** — copy `templates/SECURITY.md` and `templates/CODE_OF_CONDUCT.md`
+  to your repo root
+
+This `README.md` is the full example: every section filled in for this repo.
 
 _Every section on its own: see the [`sections/`](sections/) folder._
 
@@ -188,23 +194,24 @@ _Every section on its own: see the [`sections/`](sections/) folder._
 <!-- CONFIGURATION -->
 ## Configuration
 
-`BLANK_README.md` and the `sections/` files use these tokens. Replace each one
-everywhere it appears.
+`BLANK_README.md`, the `sections/` files and the `templates/` files use these tokens,
+always written in double braces. Replace each one everywhere it appears; when
+`grep -n '{{' README.md` prints nothing, you are done.
 
 | Token | Replace with | Example |
 |-------|--------------|---------|
-| `github_username` | Your GitHub user or org | `ysasiwat` |
-| `repo_name` | Repository name | `readme-boilerplate` |
-| `project_title` | Display name in the header | `readme-boilerplate` |
-| `project_description` | One-line tagline, 10 words or fewer | `A modular README template` |
-| `project_license` | License name | `MIT` |
-| `demo_url` | Live demo or screenshot target | `https://example.com` |
-| `your_name` | Your name in Contact | `Jane Doe` |
-| `twitter_handle` | X / Twitter handle, no `@` | `janedoe` |
-| `linkedin_username` | LinkedIn profile slug | `janedoe` |
-| `email_client` | Email domain (replace before `email`) | `gmail` |
-| `email` | Email local part | `jane` |
-| `buymeacoffee_username` | Buy Me a Coffee page name | `janedoe` |
+| `{{github_username}}` | Your GitHub user or org | `ysasiwat` |
+| `{{repo_name}}` | Repository name | `readme-boilerplate` |
+| `{{project_title}}` | Display name in the header | `readme-boilerplate` |
+| `{{project_description}}` | One-line tagline, 10 words or fewer | `A modular README template` |
+| `{{project_license}}` | License name | `MIT` |
+| `{{demo_url}}` | Live demo or screenshot target | `https://example.com` |
+| `{{your_name}}` | Your name in Contact | `Jane Doe` |
+| `{{twitter_handle}}` | X / Twitter handle, no `@` | `janedoe` |
+| `{{linkedin_username}}` | LinkedIn profile slug | `janedoe` |
+| `{{email_client}}` | Email domain | `gmail` |
+| `{{email}}` | Email local part | `jane` |
+| `{{buymeacoffee_username}}` | Buy Me a Coffee page name | `janedoe` |
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -222,7 +229,8 @@ shields.io can only read public repos.
 **A Table of Contents link doesn't jump.** The anchor must match the heading in lower
 case with spaces as hyphens: `## Quick Start` → `#quick-start`.
 
-**`email` replaced part of `email_client`.** Replace `email_client` first, then `email`.
+**Tokens vanish on a GitHub Pages site.** Jekyll reads `{{ }}` as Liquid. Replace every
+token before you publish with Pages.
 
 **`sed: 1: "README.md": invalid command` on macOS.** BSD sed needs an empty suffix:
 `sed -i '' 's/.../.../g' README.md`.

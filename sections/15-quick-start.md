@@ -3,8 +3,8 @@
 ## Quick Start
 
 ```sh
-git clone https://github.com/github_username/repo_name.git
-cd repo_name
+git clone https://github.com/{{github_username}}/{{repo_name}}.git
+cd {{repo_name}}
 npm install
 npm start
 ```

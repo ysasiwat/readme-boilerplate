@@ -14,7 +14,7 @@ Instructions for getting a local copy up and running.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/{{github_username}}/{{repo_name}}.git
    ```
 2. Install packages
    ```sh

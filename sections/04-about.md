@@ -1,7 +1,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](demo_url)
+[![Product Name Screen Shot][product-screenshot]]({{demo_url}})
 
 What problem does this project solve? One or two sentences. Why did you build it?
 

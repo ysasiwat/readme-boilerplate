@@ -1,6 +1,8 @@
 # Contributing
 
-Thanks for helping improve `readme-boilerplate`.
+Thanks for helping improve `readme-boilerplate`. By taking part you agree to the
+[Code of Conduct](CODE_OF_CONDUCT.md). Report security problems as described in
+[SECURITY.md](SECURITY.md), not in a public issue.
 
 ## How to contribute
 
@@ -14,7 +16,8 @@ Thanks for helping improve `readme-boilerplate`.
 
 - Keep sections copy-pasteable — each file in `sections/` must stand alone
 - Reference-style links go at the bottom of the file, not inline
-- Keep the blank template's tokens consistent with `README.md`
+- Write tokens as `{{token}}` and keep them in line with the Configuration table in
+  `README.md`
 - One logical change per pull request
 
 ## Reporting issues

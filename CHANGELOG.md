@@ -8,10 +8,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Changed
+- **Breaking:** tokens are now written `{{token}}` (for example `{{repo_name}}`) in
+  `BLANK_README.md` and `sections/`. One `grep -n '{{'` finds every leftover, and
+  `email` no longer collides with `email_client`
 - Shields moved from above the header to under the title, so readers see the
   project name first
 
 ### Added
+- `SECURITY.md` and `CODE_OF_CONDUCT.md` for this repo, and copyable versions in
+  `templates/`
 - Buy Me a Coffee support section (`sections/11-support.md`)
 - Quick Start, Configuration and Troubleshooting sections (`sections/15-17`), also in
   `README.md` and `BLANK_README.md`
