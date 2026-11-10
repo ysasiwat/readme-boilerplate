@@ -17,7 +17,7 @@
     <img src="images/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">readme-boilerplate</h3>
+  <h3 align="center">Readme Boilerplate</h3>
 
 <!-- PROJECT SHIELDS — under the title so readers see the name first.
 *** Keep the blank lines around this block and no indent, or GitHub won't render
@@ -202,7 +202,7 @@ always written in double braces. Replace each one everywhere it appears; when
 |-------|--------------|---------|
 | `{{github_username}}` | Your GitHub user or org | `ysasiwat` |
 | `{{repo_name}}` | Repository name | `readme-boilerplate` |
-| `{{project_title}}` | Display name in the header | `readme-boilerplate` |
+| `{{project_title}}` | Display name in the header | `Readme Boilerplate` |
 | `{{project_description}}` | One-line tagline, 10 words or fewer | `A modular README template` |
 | `{{project_license}}` | License name | `MIT` |
 | `{{demo_url}}` | Live demo or screenshot target | `https://example.com` |
