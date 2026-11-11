@@ -30,7 +30,7 @@ scripts/version.sh check        # the same check runs on every push and pull req
 git commit -am "chore(release): 2.1.0" && git tag -a v2.1.0 -m v2.1.0 && git push origin master v2.1.0
 ```
 
-Pushing the tag runs the **Release** workflow, which makes the GitHub release from that
+Pushing the tag runs the release job of the **Version** workflow, which makes the GitHub release from that
 `CHANGELOG.md` section.
 
 ## Reporting issues

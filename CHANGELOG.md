@@ -12,6 +12,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   a **Check version** workflow, and a **Release** workflow that makes the GitHub release
   from the changelog when a `vX.Y.Z` tag is pushed
 
+### Changed
+- The version check and the release run from the reusable workflows in
+  [ysasiwat/github-workflows](https://github.com/ysasiwat/github-workflows) (`@v1`),
+  called by `.github/workflows/version.yml`
+
 ## [2.0.0] - 2026-11-10
 
 ### Changed

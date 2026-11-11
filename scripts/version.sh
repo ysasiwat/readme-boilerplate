@@ -3,10 +3,18 @@
 #   scripts/version.sh bump X.Y.Z    move [Unreleased] entries under X.Y.Z, set VERSION and the compare links
 #   scripts/version.sh check         fail if VERSION, its CHANGELOG section and links disagree
 #   scripts/version.sh notes [X.Y.Z] print that version's CHANGELOG section (default: VERSION)
+# Copied from ysasiwat/github-workflows; keep it identical and put repo settings in version.conf.
+# Optional version.conf next to this script (bash) sets MARKER_FILES=(...) and MARKER_PREFIX='name v':
+# check and bump then also keep "<MARKER_PREFIX><version>" in step in those files.
 set -euo pipefail
-cd "$(dirname "$0")/.."
+here=$(cd "$(dirname "$0")" && pwd)
+cd "$here/.."
 
 SEMVER='^[0-9]+\.[0-9]+\.[0-9]+$'
+MARKER_FILES=()
+MARKER_PREFIX=''
+# shellcheck source=/dev/null
+[[ -f $here/version.conf ]] && source "$here/version.conf"
 
 current() { tr -d '[:space:]' < VERSION; }
 
@@ -28,7 +36,7 @@ notes() {
 repo_url() { sed -nE 's#^\[Unreleased\]: (https://[^ ]+)/compare/.*#\1#p' CHANGELOG.md | tr -d '\r'; }
 
 check() {
-  local v bad=0
+  local v f bad=0
   v=$(current)
   [[ $v =~ $SEMVER ]] || { echo "VERSION is not X.Y.Z: '$v'" >&2; exit 1; }
   grep -q "^## \[$v\]" CHANGELOG.md || { echo "CHANGELOG.md: no '## [$v]' section" >&2; exit 1; }
@@ -36,12 +44,15 @@ check() {
   grep -q "^\[$v\]: " CHANGELOG.md || { echo "CHANGELOG.md: no '[$v]:' link" >&2; bad=1; }
   grep -q "^\[Unreleased\]: .*/compare/v$v\.\.\.HEAD" CHANGELOG.md \
     || { echo "CHANGELOG.md: '[Unreleased]:' link does not compare from v$v" >&2; bad=1; }
+  for f in "${MARKER_FILES[@]}"; do
+    grep -qF "$MARKER_PREFIX$v" "$f" || { echo "$f: marker is not '$MARKER_PREFIX$v'" >&2; bad=1; }
+  done
   [[ $bad -eq 0 ]] || exit 1
   echo "version $v is consistent"
 }
 
 bump() {
-  local v=$1 prev url
+  local v=$1 prev url prefix_re
   [[ $v =~ $SEMVER ]] || { echo "usage: scripts/version.sh bump X.Y.Z" >&2; exit 1; }
   prev=$(current)
   url=$(repo_url)
@@ -58,6 +69,10 @@ bump() {
     }
     { print }' CHANGELOG.md > CHANGELOG.md.tmp && mv CHANGELOG.md.tmp CHANGELOG.md
   printf '%s\n' "$v" > VERSION
+  if [[ ${#MARKER_FILES[@]} -gt 0 ]]; then
+    prefix_re=$(printf '%s' "$MARKER_PREFIX" | sed 's/[][\.*^$/|]/\\&/g')
+    sed -i -E "s|${prefix_re}[0-9]+\.[0-9]+\.[0-9]+|${prefix_re}$v|" "${MARKER_FILES[@]}"
+  fi
   echo "set version $prev -> $v. Review CHANGELOG.md, then run: scripts/version.sh check"
 }
 

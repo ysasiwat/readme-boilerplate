@@ -1,13 +1,17 @@
-name: Check version
+name: Version
 
 on:
   push:
     branches: [master]
+    tags: ['v*.*.*']
   pull_request:
 
 jobs:
-  version:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - run: bash scripts/version.sh check
+  check:
+    uses: ysasiwat/github-workflows/.github/workflows/version-check.yml@v1
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    permissions:
+      contents: write
+    uses: ysasiwat/github-workflows/.github/workflows/release.yml@v1
